@@ -1,0 +1,36 @@
+/* Simple pixel-art-ish style with accent */
+*{box-sizing:border-box}
+body{font-family: 'Verdana', sans-serif;background:#0b1020;color:#e6f0ff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background-image: url(DeviantArt\ -\ The\ Largest\ Online\ Art\ Gallery\ and\ Community.gif);background-size: 100%;background-position: center center;}
+.container {
+  width: 420px;
+  padding: 20px;
+  border-radius: 12px;
+
+  /* 🔹 Ganti background jadi transparan lembut */
+  background: rgba(14, 21, 48, 0.45); /* warna dasar transparan */
+  backdrop-filter: blur(12px);        /* efek buram transparan */
+  -webkit-backdrop-filter: blur(12px);/* biar jalan di semua browser */
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2); /* border transparan lembut */
+  transition: all 0.3s ease-in-out;
+}
+.container:hover {
+  box-shadow: 0 0 20px rgba(72, 202, 228, 0.3);
+}
+
+h1{text-align:center;margin:0 0 12px;font-size:20px;letter-spacing:1px}
+#todo-form{display:flex;gap:8px;margin-bottom:12px}
+#todo-form input{flex:1;padding:10px;border-radius:6px;border:2px solid #425589;background:#081129;color:#e6f0ff;outline:none;font-size:14px}
+#todo-form button{padding:10px 12px;border-radius:6px;border:none;background:#4cc9f0;color:#04233b;font-weight:700;cursor:pointer}
+.message{min-height:18px;margin-bottom:8px;font-size:13px}
+.todo-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.todo-item{display:flex;align-items:center;justify-content:space-between;padding:10px;border-radius:6px;background:#071733;border:2px solid #12243f}
+.left{display:flex;align-items:center;gap:8px}
+.checkbox{width:18px;height:18px;border-radius:4px;border:2px solid #274060;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.title{font-size:14px}
+.actions{display:flex;gap:6px}
+.btn{padding:6px 8px;border-radius:6px;border:none;cursor:pointer;font-weight:700}
+.btn-edit{background:#ffdd57;color:#2b2a1b}
+.btn-delete{background:#ff6b6b;color:#2b2a1b}
+.small{font-size:12px;color:#9fb0d6}
